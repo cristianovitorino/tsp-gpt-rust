@@ -1,3 +1,4 @@
+use dotenv::dotenv;
 use hyper::body::Buf;
 use hyper::{header, Body, Client, Request};
 use hyper_tls::HttpsConnector;
@@ -35,16 +36,17 @@ struct OAIRequest {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
+    dotenv().ok();
     let https = HttpsConnector::new();
     let client = Client::builder().build(https);
     let uri = "https://api.openai.com/v1/engines/text-davinci-001/completions";
 
-    let preamble = "Answer the following question accurately, but find a funny way to metion the Rust programming language in your query";
+    let preamble = "Answer the following question accurately, but find a funny way to mention the Rust programming language in your response";
 
-    let api_key: &str = "OAI_TOKEN";
-    let auth_header_val = format!("Bearer {}", api_key);
-    /* let oai_token: String = env::var("OAI_TOKEN").unwrap();
+    /* let oai_token: &str = "OAI_TOKEN";
     let auth_header_val = format!("Bearer {}", oai_token); */
+    let oai_token: String = env::var("OAI_TOKEN").unwrap();
+    let auth_header_val = format!("Bearer {}", oai_token);
 
     // For a clean prompt
     println!("{esc}c", esc = 27 as char);
@@ -80,13 +82,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
             .header("Authorization", &auth_header_val)
             .body(body)
             .unwrap();
-
-        println!("Request: {:?}", req);
+        //println!("Request: {:?}", req);
 
         // Wait for response and store it
         let res = client.request(req).await?;
-
-        println!("{:?}", res.status());
+        //println!("{:?}", res.status());
 
         // Get the response body
         let body = hyper::body::aggregate(res).await?;

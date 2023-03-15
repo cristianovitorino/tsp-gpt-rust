@@ -43,8 +43,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
 
     let preamble = "Answer the following question accurately, but find a funny way to mention the Rust programming language in your response";
 
-    /* let oai_token: &str = "OAI_TOKEN";
-    let auth_header_val = format!("Bearer {}", oai_token); */
     let oai_token: String = env::var("OAI_TOKEN").unwrap();
     let auth_header_val = format!("Bearer {}", oai_token);
 

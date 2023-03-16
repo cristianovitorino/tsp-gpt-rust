@@ -16,13 +16,13 @@ Attacking the [**Traveling Salesman Problem**](https://en.wikipedia.org/wiki/Tra
 - Returns the best routing solution possible in [**Polynomial Time**](https://mathworld.wolfram.com/PolynomialTime.html)
 
 ## How to use
-### API
-An environmental variable needs to be created. As long as the `.env` is still present at `.gitignore` your secret API token is never exposed publicly, which is the recommended and expected behaviour
+**API**
+An environmental variable needs to be created. As long as the `.env` is still present at `.gitignore` your secret OpenAI API key is never exposed publicly, which is the recommended and expected behaviour
 ```
 touch .env && echo 'OAI_TOKEN=YOUR_OPENAI_API' >> .env
 ```
 
-### CLI
+**CLI**
 Press 'Ctrl + C' to exit the CLI application
 ```
 cargo run

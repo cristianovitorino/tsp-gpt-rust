@@ -10,8 +10,8 @@
 Attacking the [**Traveling Salesman Problem**](https://en.wikipedia.org/wiki/Travelling_salesman_problem) in [**NP-hard**](https://en.wikipedia.org/wiki/NP-hardness) using [**GPT-3**](https://openai.com/product) and [**Rust**](https://www.rust-lang.org/)
 
 ## Features
-- Accepts addresses input
-- Accepts coordinates input
+- Accepts addresses as input
+- Accepts coordinates as input
 - TSP route handling using GPT-3
 - Returns the best routing solution possible in [**Polynomial Time**](https://mathworld.wolfram.com/PolynomialTime.html)
 

@@ -23,7 +23,7 @@ touch .env && echo 'OAI_TOKEN=YOUR_OPENAI_API' >> .env
 ```
 
 #### CLI
-Press 'Ctrl + C' to exit the CLI application
+Press `Ctrl + C` when you need to exit the CLI application
 ```
 cargo run
 ```

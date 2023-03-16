@@ -41,7 +41,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     let client = Client::builder().build(https);
     let uri = "https://api.openai.com/v1/engines/text-davinci-001/completions";
 
-    let preamble = "Answer the following question accurately, but find a funny way to mention the Rust programming language in your response";
+    //let preamble = "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?";
+
+    let preamble = "In the following list of cities in the state of New Jersey, United States, calculate the best 3 shortest possible routes that visits each city exactly once and returns to the origin city";
+
+    //Newark, Old Bridge, Paterson, Elizabeth, Cherry Hill, Edison, Woodbridge, Vineland, Hamilton township, Trenton
+
+    //newark, elizabeth, paterson, woodbridge, trenton, edison
 
     let oai_token: String = env::var("OAI_TOKEN").unwrap();
     let auth_header_val = format!("Bearer {}", oai_token);

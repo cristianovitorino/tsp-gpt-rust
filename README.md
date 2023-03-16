@@ -33,9 +33,9 @@ cargo run
 - [x] OpenAI API Consumption
 - [x] Async call
 - [x] User input
-- [x] Prompt template for testing
+- [x] Preamble prompt template
 - [x] CLI Interface
-- [ ] Custom prompt
+- [ ] Custom preamble prompt tuning
     - [ ] Addresses input handling
     - [ ] Coordinates input handling
 - [ ] TSP route handling through GPT-3
@@ -43,6 +43,10 @@ cargo run
 - [ ] Simple logo for the project
 - [ ] Upgrade the interface from a CLI to a TUI
 - [ ] Improve the TSP handling efficiency and accuracy
+- [ ] Steadly increase the application complexity and scaling by simulating a TSP Modeling by integrating [WolframAlpha](https://www.wolframalpha.com/)
+    - [ ] Build a local, personalized database, incremented with every prompt response
+    - [ ] Simulate GPT-3 Modeling considering the database as input
+    - [ ] Integrate WolframAlpha algorithms for better accuracy
 ## Copyright
 
 TSP GPT-3 Rust © Cristiano Vitorino, [BSD-3-Clause license](https://opensource.org/licenses/BSD-3-Clause)

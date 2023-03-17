@@ -33,7 +33,7 @@ Type the city names like in the below example, separated by commas
 sacramento, santa maria, bakersfield, santa rosa, monterey
 ```
 #### Max Tokens
-the `oai_request` variable can be increased for more accuracy, but it can get exponentially more expensive
+the `oai_request` variable can be increased for better accuracy, but it can get exponentially more expensive
 
 ## Roadmap
 - [x] OpenAI Auth Tokenization

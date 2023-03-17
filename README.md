@@ -10,8 +10,7 @@
 Attacking the [**Traveling Salesman Problem**](https://en.wikipedia.org/wiki/Travelling_salesman_problem) in [**NP-hard**](https://en.wikipedia.org/wiki/NP-hardness) using [**GPT-3**](https://openai.com/product) and [**Rust**](https://www.rust-lang.org/)
 
 ## Features
-- Accepts addresses as input
-- Accepts coordinates as input
+- Accepts cities as input
 - TSP route handling using GPT-3
 - Returns the best routing solution possible in [**Polynomial Time**](https://mathworld.wolfram.com/PolynomialTime.html)
 
@@ -28,25 +27,34 @@ Press `Ctrl + C` when you need to exit the CLI application
 cargo run
 ```
 
+#### Prompt
+Insert cities like in the below example
+```
+sacramento, santa maria, bakersfield, santa rosa, monterey
+```
+#### Max Tokens
+the `oai_request` variable can be increased for more accuracy, but it can get exponentially more expensive
+
 ## Roadmap
 - [x] OpenAI Auth Tokenization
 - [x] OpenAI API Consumption
 - [x] Async call
 - [x] User input
-- [x] Preamble prompt template
+- [x] Preamble prompt
 - [x] CLI Interface
+- [x] TSP route handling through GPT-3
+- [x] Polynomial Time response
+- [ ] Simple logo for the project
 - [ ] Custom preamble prompt tuning
     - [ ] Addresses input handling
-    - [ ] Coordinates input handling
-- [ ] TSP route handling through GPT-3
-- [ ] Polynomial Time response
-- [ ] Simple logo for the project
+    - [ ] Geolocation input handling
 - [ ] Upgrade the interface from a CLI to a TUI
 - [ ] Improve the TSP handling efficiency and accuracy
 - [ ] Steadly increase the application complexity and scaling by simulating a TSP Modeling by integrating [WolframAlpha](https://www.wolframalpha.com/)
     - [ ] Build a local, personalized database, incremented with every prompt response
     - [ ] Simulate GPT-3 Modeling considering the database as input
     - [ ] Integrate WolframAlpha algorithms for better accuracy
+
 ## Copyright
 
 TSP GPT-3 Rust © Cristiano Vitorino, [BSD-3-Clause license](https://opensource.org/licenses/BSD-3-Clause)

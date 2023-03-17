@@ -28,7 +28,7 @@ cargo run
 ```
 
 #### Prompt
-Insert cities like in the below example
+Type the city names like in the below example, separated by commans
 ```
 sacramento, santa maria, bakersfield, santa rosa, monterey
 ```

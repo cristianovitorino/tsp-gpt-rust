@@ -48,8 +48,8 @@ The `max_tokens` parameter on the `oai_request` variable can be increased for be
 - [ ] Custom preamble prompt tuning
     - [ ] Addresses input handling
     - [ ] Geolocation input handling
-- [ ] Upgrade the interface from a CLI to a TUI
 - [ ] Improve the TSP handling efficiency and accuracy
+- [ ] Upgrade the interface from a CLI to a TUI
 - [ ] Steadly increase the application complexity and scaling by simulating a TSP Modeling by integrating [WolframAlpha](https://www.wolframalpha.com/)
     - [ ] Build a local, personalized database, incremented with every prompt response
     - [ ] Simulate GPT-3 Modeling considering the database as input

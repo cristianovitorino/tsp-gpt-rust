@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="" alt="icon" width="150"/>
+    <img src="https://raw.githubusercontent.com/cristianovitorino/tsp-gpt-rust/main/icon.png" alt="icon" width="150"/>
 </p>
 
 <h1 align="center">
@@ -58,3 +58,10 @@ the `oai_request` variable can be increased for more accuracy, but it can get ex
 ## Copyright
 
 TSP GPT-3 Rust © Cristiano Vitorino, [BSD-3-Clause license](https://opensource.org/licenses/BSD-3-Clause)
+
+
+<div>
+The TSP GPT-3 Rust logo is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>
+
+<br/><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png" /></a>
+</div>

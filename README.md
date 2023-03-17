@@ -15,24 +15,24 @@ Attacking the [**Traveling Salesman Problem**](https://en.wikipedia.org/wiki/Tra
 - Returns the best routing solution possible in [**Polynomial Time**](https://mathworld.wolfram.com/PolynomialTime.html)
 
 ## How to use
-#### API
+### API
 An environmental variable needs to be created. As long as the `.env` is still present at `.gitignore` your secret OpenAI API key is never exposed publicly, which is the recommended and expected behaviour
 ```
 touch .env && echo 'OAI_TOKEN=YOUR_OPENAI_API' >> .env
 ```
 
-#### CLI
+### CLI
 ```
 cargo run
 ```
 Press `Ctrl + C` when you need to exit the CLI application
 
-#### Prompt
+### Prompt
 Type the city names like in the below example, separated by commas
 ```
 sacramento, santa maria, bakersfield, santa rosa, monterey
 ```
-#### Max Tokens
+### Max Tokens
 the `oai_request` variable can be increased for more accuracy, but it can get exponentially more expensive
 
 ## Roadmap

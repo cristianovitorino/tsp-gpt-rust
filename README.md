@@ -22,10 +22,10 @@ touch .env && echo 'OAI_TOKEN=YOUR_OPENAI_API' >> .env
 ```
 
 #### CLI
-Press `Ctrl + C` when you need to exit the CLI application
 ```
 cargo run
 ```
+Press `Ctrl + C` when you need to exit the CLI application
 
 #### Prompt
 Type the city names like in the below example, separated by commas

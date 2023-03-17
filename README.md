@@ -44,7 +44,7 @@ the `oai_request` variable can be increased for more accuracy, but it can get ex
 - [x] CLI Interface
 - [x] TSP route handling through GPT-3
 - [x] Polynomial Time response
-- [ ] Simple logo for the project
+- [x] Simple logo for the project
 - [ ] Custom preamble prompt tuning
     - [ ] Addresses input handling
     - [ ] Geolocation input handling

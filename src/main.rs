@@ -41,13 +41,23 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     let client = Client::builder().build(https);
     let uri = "https://api.openai.com/v1/engines/text-davinci-001/completions";
 
-    //let preamble = "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?";
+    let preamble = "
+    Based on the following information, answer the following question accurately.
 
-    let preamble = "In the following list of cities in the state of New Jersey, United States, calculate the best 3 shortest possible routes that visits each city exactly once and returns to the origin city";
+    Information:
+    1. Try random routes.
+    2. Do exact algorithms, trying all permutations.
+    3. Use Integer Linear Programming Formulations to calculate the routes.
+    4. Use geolocation data for the route calculation.
+    5. Consider the following link for context: https://en.wikipedia.org/wiki/Travelling_salesman_problem
+    6. All cities should be included in the answer.
+    7. Answer with the optimal route with the cities properly ordered.
 
-    //Newark, Old Bridge, Paterson, Elizabeth, Cherry Hill, Edison, Woodbridge, Vineland, Hamilton township, Trenton
+    Question: Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?
+    ";
 
-    //newark, elizabeth, paterson, woodbridge, trenton, edison
+    // Input example:
+    //sacramento, santa maria, bakersfield, santa rosa, monterey
 
     let oai_token: String = env::var("OAI_TOKEN").unwrap();
     let auth_header_val = format!("Bearer {}", oai_token);

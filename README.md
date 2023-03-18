@@ -7,7 +7,7 @@
 </h1>
 
 ## About
-Attacking the [**Traveling Salesman Problem**](https://en.wikipedia.org/wiki/Travelling_salesman_problem) in [**NP-hard**](https://en.wikipedia.org/wiki/NP-hardness) using [**GPT-3**](https://openai.com/product) and [**Rust**](https://www.rust-lang.org/)
+Attacking the [**Traveling Salesman Problem**](https://en.wikipedia.org/wiki/Travelling_salesman_problem) in [**NP-hard**](https://en.wikipedia.org/wiki/NP-hardness) using [**GPT-3**](https://openai.com/product) and [**Rust**](https://www.rust-lang.org/) 🦀
 
 ## Features
 - Accepts cities as input
